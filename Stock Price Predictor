@@ -102,7 +102,7 @@ plt.plot(valid[['Close', 'Predictions']])
 plt.legend(['Train', 'Val', 'Predictions'], loc='lower right')
 plt.show()
 
-#Predicting the price for next dat(that is 8 DEC 2020)
+#Predicting the price for next date(that is 8 DEC 2020)
 apple_quote = web.DataReader('AAPL', data_source='yahoo', start='2012-01-01', end='2020-12-07')
 #Create a new dataframe
 new_df = apple_quote.filter(['Close'])
